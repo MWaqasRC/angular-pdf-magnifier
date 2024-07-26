@@ -1,0 +1,13 @@
+<div class="pdf-container" #pdfViewer>
+   <ngx-extended-pdf-viewer
+     [src]="pdfSrc"
+     [zoom]="zoomLevel * 100"
+     [height]="'80vh'"
+     [showToolbar]="true"
+   ></ngx-extended-pdf-viewer>
+   <button (click)="toggleMagnifier()">Toggle Magnifier</button>
+   <div class="magnifier" id="magnifier" #magnifier>
+     <img src="" alt="magnified content" />
+   </div>
+ </div>
+ 

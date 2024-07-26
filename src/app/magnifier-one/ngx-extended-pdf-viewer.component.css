@@ -1,0 +1,43 @@
+.pdf-container {
+   position: relative;
+   overflow: hidden;
+ }
+ 
+ .controls {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   z-index: 100;
+ }
+ 
+ button {
+   margin: 5px;
+   padding: 5px 10px;
+   font-size: 14px;
+   cursor: pointer;
+ }
+ 
+ .magnifier {
+   position: absolute;
+   border: 2px solid #ccc;
+   border-radius: 50%;
+   cursor: zoom-in;
+   display: none;
+   width: 190px;
+   height: 190px;
+   overflow: hidden;
+   z-index: 1000;
+   pointer-events: none;
+ }
+ 
+ .magnifier img {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   transform: scale(0.5); /* Adjust this to improve rendering */
+   transform-origin: top left;
+   transition: transform 0.1s ease;
+ }
+ 
