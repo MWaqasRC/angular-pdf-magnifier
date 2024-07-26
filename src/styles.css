@@ -1,4 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
-*{
+* {
    margin: 0;
+}
+
+nav {
+   display: flex;
+   justify-content: center;
+   gap: 5px;
+   margin: 5px 0;
+}
+
+
+a {
+   padding: 5px;
+   background:rgb(100 116 139);
+   border-radius: 3px;
+   color: #fff;
+   text-decoration: none;
+}
+
+.active {
+   background-color: rgb(79 70 229);
 }
